@@ -33,8 +33,15 @@ plugins:
   - jekyll-feed
 
 collections:
-  - sections
-  - projects
+  sections:
+    output: false
+  projects:
+    output: true
+
+defaults:
+  -
+    values:
+      layout: "default"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
